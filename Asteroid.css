@@ -2272,9 +2272,9 @@ input:-webkit-autofill:active {
 }
 
 .dropdown .dropdown-trigger::after {
-  content: "\100188";
+  content: "⮟";
   padding-left: .5rem;
-  font-size: .7em;
+  font-size: 1em;
 }
 
 .dropdown.active .dropdown-menu,
@@ -2287,9 +2287,9 @@ input:-webkit-autofill:active {
 
 .dropdown.active .dropdown-trigger::after,
 .dropdown.hoverable:hover .dropdown-trigger::after {
-  content: "\100187";
+  content: "⮝";
   padding-left: .5rem;
-  font-size: .7em;
+  font-size: 1em;
 }
 
 .dropdown.right .dropdown-menu {
