@@ -5,4 +5,4 @@
 
 ## Underconstruction
 
-Asteroid is relatively new and it is constantly in development! It is not ready for production, it still lacks __mobile support which is coming soon!__
+Asteroid is relatively new and it is in constantly development! It is not ready for production, it still lacks __mobile support which is coming soon!__
