@@ -1,6 +1,7 @@
 /* 
-    This CSS framework was made by Leandro Reschke. 
-    Feel free to use it as you like and if you want to say thanks come and find me at my social
+    Asteroid CSS framework was made by Leandro Reschke. 
+    Feel free to use it as you like and if you want to say thanks come and find me at my socials
+    Github - /leandroreschke
     Twitter - @leandroreschke 
     Website - leandroreschke.com
 
@@ -10,7 +11,7 @@
 
   /* PALETTE TO USE OR CUSTOMIZE */ 
   
-  --lighterColor: 0, 0%, 80%;
+  --lighterColor: 0, 0%, 75%;
   --lightColor: 0, 0%, 60%;
   --darkColor: 0, 0%, 40%;
   --darkerColor: 0, 0%, 20%;
@@ -44,10 +45,10 @@
   --colorBgAlertDark: 24.96, 90%, 53.50%; 
 
   /*neutral colors*/
-  --colorBgLight: 0, 0%, 98%;
+  --colorBgLight: 0, 0%, 96%;
   --colorBgLighter: 0, 0%, 100%;
   --colorBgDark: 0, 0%, 8%;
-  --colorBgDarker: 0, 0%, 6%;
+  --colorBgDarker: 0, 0%, 4%;
 
   /* COLOR DEFAULT SCHEME DON'T CHANGE(If you want to customize only change above variables */
   
@@ -482,7 +483,7 @@ hr {
 }
 
 .button:hover {
-  border-color: hsla(var(--text-color), .6);
+  border-color: hsla(var(--text-color), .7);
   color: hsla(var(--text-color));
 }
 
@@ -1170,6 +1171,7 @@ hr {
   display: block;
   position: relative;
   padding: .7em 2.0em;
+  color: hsl(var(--tex));
   border: var(--border-width) solid hsl(var(--border));
   transition: background 0.3s ease, border-color 0.3s ease;
 }
@@ -1177,7 +1179,8 @@ hr {
   z-index: 2;
   background: hsla(var(--input-color), .15);
   border-color: hsl(var(--input-color));
-  color: hsl(var(--input-text-color));
+  color: hsl(var(--input-color));
+  font-weight: 800;
 }
 .radio-group label:hover input + span {
   z-index: 1;
@@ -1238,7 +1241,7 @@ hr {
 .switch input + span:before {
   height: 2em;
   border: var(--border-width) solid transparent;
-  background: hsl(var(--border));
+  background: hsl(var(--bg-color));
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 .checkbox input + span:after,
@@ -1264,6 +1267,7 @@ hr {
 .radio input:checked + span,
 .switch input:checked + span {
   color: hsl(var(--input-text-color));
+  font-weight: 800;
 }
 
 .checkbox:hover input:not(:checked) + span:before,
@@ -1276,7 +1280,7 @@ hr {
 .checkbox:hover input:not(:checked) + span,
 .radio:hover input:not(:checked) + span,
 .switch:hover input:not(:checked) + span {
-  color: hsla(var(--input-text-color), .5);
+  color: hsla(var(--input-text-color), .9);
 }
 
 .checkbox:hover input:checked + span:before,
@@ -1358,7 +1362,7 @@ hr {
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
-  background: hsl(var(--text-color));
+  background: hsl(var(--border));
 }
 .switch input:checked + span:after {
   background: hsla(var(--input-text-color), 1);
@@ -1378,8 +1382,8 @@ hr {
   width: 100%;
   -webkit-appearance: none;
   appearance: none;
-  background: transparent;
-  border: .1rem solid hsl(var(--border));
+  background: hsla(var(--bg-color));
+  border: .1rem solid transparent;
   padding: .6em .6em;
   font-size: 1.6rem;
   color: hsl(var(--text-color));
@@ -1395,13 +1399,13 @@ input:-webkit-autofill:active {
 }
 
 .input::-moz-placeholder {
-  color: hsl(var(--border));
+  color: hsla(var(--border));
 }
 .input:-ms-input-placeholder {
-  color: hsl(var(--border));
+  color: hsla(var(--border));
 }
 .input::placeholder {
-  color: hsl(var(--border));
+  color: hsla(var(--border));
 }
 
 .input::-webkit-calendar-picker-indicator {
@@ -1411,6 +1415,12 @@ input:-webkit-autofill:active {
 .input:focus {
   outline: none;
   border-color: hsl(var(--input-color));
+  background: hsla(var(--input-color), .15);
+  color: hsla(var(--input-color));
+}
+
+.input:focus::placeholder {
+  color: hsla(var(--input-color), .6);
 }
 
 .input-label {
