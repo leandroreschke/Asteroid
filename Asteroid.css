@@ -178,15 +178,13 @@ ul {
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: Main;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 62.5%;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-    box-sizing: border-box;
-    font-family: Main;
   }
 }
 
@@ -252,7 +250,6 @@ body.theme-dark {
 
 blockquote {
   font-size: 2.4rem;
-  font-family: Open Sans;
   font-style: italic;
   color: hsl(var(--text-color));
   padding: 2.5rem 3rem 2.5rem 6rem;
@@ -461,7 +458,7 @@ hr {
   box-shadow: none;
   display: inline-flex;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: normal;
   justify-content: flex-start;
   position: relative;
   vertical-align: top;
@@ -1180,7 +1177,7 @@ hr {
   background: hsla(var(--input-color), .15);
   border-color: hsl(var(--input-color));
   color: hsl(var(--input-color));
-  font-weight: 800;
+  font-weight: bold;
 }
 .radio-group label:hover input + span {
   z-index: 1;
@@ -1267,7 +1264,7 @@ hr {
 .radio input:checked + span,
 .switch input:checked + span {
   color: hsl(var(--input-text-color));
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .checkbox:hover input:not(:checked) + span:before,
@@ -1524,206 +1521,6 @@ input:-webkit-autofill:active {
 
 /* END LIST */
 
-/* BEGIN Main Font*/
-
-@font-face {
-  font-family: Main;
-  src: url(./fonts/Main/Main-Light.otf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: Main;
-  src: url(./fonts/Main/Main-LightItalic.otf);
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Main;
-  src: url(./fonts/Main/Main-Regular.otf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Main;
-  src: url(./fonts/Main/Main-RegularItalic.otf);
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Main;
-  src: url(./fonts/Main/Main-Bold.otf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: Main;
-  src: url(./fonts/Main/Main-BoldItalic.otf);
-  font-weight: 800;
-  font-style: italic;
-}
-
-/* END Main Font*/
-
-/* BEGIN MainRound Font*/
-
-@font-face {
-  font-family: MainRound;
-  src: url(./fonts/MainRound/Main-Round-Light.otf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: MainRound;
-  src: url(./fonts/MainRound/Main-Round-Regular.otf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: MainRound;
-  src: url(./fonts/MainRound/Main-Round-Bold.otf);
-  font-weight: 800;
-}
-
-/* END MainRound Font*/
-
-/* BEGIN Mini Font*/
-
-@font-face {
-  font-family: Mini;
-  src: url(./fonts/Mini/Mini-Light.otf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: Mini;
-  src: url(./fonts/Mini/Mini-LightItalic.otf);
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Mini;
-  src: url(./fonts/Mini/Mini-Regular.otf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Mini;
-  src: url(./fonts/Mini/Mini-RegularItalic.otf);
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Mini;
-  src: url(./fonts/Mini/Mini-Bold.otf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: Mini;
-  src: url(./fonts/Mini/Mini-BoldItalic.otf);
-  font-weight: 800;
-  font-style: italic;
-}
-
-/* END Mini Font*/
-
-/* BEGIN Mini Font*/
-
-@font-face {
-  font-family: MiniRound;
-  src: url(./fonts/MiniRound/Mini-Round-Light.otf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: MiniRound;
-  src: url(./fonts/MiniRound/Mini-Round-Regular.otf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: MiniRound;
-  src: url(./fonts/MiniRound/Mini-Round-Bold.otf);
-  font-weight: 800;
-}
-
-/* END Mini Font*/
-
-/* BEGIN Code Font*/
-
-@font-face {
-  font-family: Code;
-  src: url(./fonts/Code/Code-Light.ttf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: Code;
-  src: url(./fonts/Code/Code-LightItalic.ttf);
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Code;
-  src: url(./fonts/Code/Code-Regular.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Code;
-  src: url(./fonts/Code/Code-RegularItalic.ttf);
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Code;
-  src: url(./fonts/Code/Code-Bold.ttf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: Code;
-  src: url(./fonts/Code/Code-BoldItalic.ttf);
-  font-weight: 800;
-  font-style: italic;
-}
-
-/* END Code Font*/
-
-@font-face {
-  font-family: font1;
-  src: url(./fonts/font1.woff);
-}
-
-@font-face {
-  font-family: font2;
-  src: url(./fonts/font2.woff);
-}
-
-@font-face {
-  font-family: font3;
-  src: url(./fonts/font3.woff);
-}
-
-.font1 {
-  font-family: font1;
-}
-
-.font2 {
-  font-family: font2;
-}
-
-.font3 {
-  font-family: font3;
-}
-
 /* Begin Custom Elements */
 
 .bg-gradient-1anim-45 {
@@ -1850,7 +1647,7 @@ input:-webkit-autofill:active {
   position: absolute;
   text-align: left;
   backdrop-filter: blur(1.6rem);
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .moreinfo {
@@ -2165,80 +1962,40 @@ input:-webkit-autofill:active {
   word-break: break-word;
 }
 
-/* .fw-ultralight {
+.fw-ultralight {
   font-weight: 100;
-} */
+} 
 
 .fw-light {
   font-weight: 200;
 }
 
-/* .fw-light {
+ .fw-ultrathin {
   font-weight: 300;
-}
+} 
 
-.fw-regular {
+.fw-thin {
   font-weight: 400;
-} */
+} 
 
 .fw-regular {
   font-weight: 500;
 }
 
-/* .fw-semibold {
+.fw-semibold {
   font-weight: 600;
 }
 
 .fw-bold {
   font-weight: 700;
-} */
+} 
 
-.fw-bold {
+.fw-medium {
   font-weight: 800;
 }
 
-/* .fw-black {
+.fw-black {
   font-weight: 900;
-} */
-
-.ff-main {
-  font-family: Main, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-mainround {
-  font-family: MainRound, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-mini {
-  font-family: Mini, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-miniround {
-  font-family: MiniRound, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-code {
-  font-family: Code, monospace;
-}
-
-.ff-symbols {
-  font-family: symbols;
-}
-
-.ff-primary {
-  font-family: Main, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-secondary {
-  font-family: Main, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-sans-serif {
-  font-family: Main, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.ff-monospace {
-  font-family: monospace;
 }
 
 .indent-1 {
