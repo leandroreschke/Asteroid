@@ -1,6 +1,8 @@
 # Asteroid
 ### Asteroid is a colorful minimalist CSS framework based on flexbox
 
+# Download now from SRC folder, chekcout the example in https://leandroreschke.github.io/Asteroid/
+
 ![Asteroid Showcase](/images/Animação.gif)
 
 ## Underconstruction
