@@ -18,31 +18,11 @@
 
   /* color scheme light */
 
-  --colorTextPrimaryLight: 249.75, 67%, 70%;
-  --colorTextInfoLight: 197.44, 95%, 47%; 
-  --colorTextSuccessLight: 164.99, 60%, 43%;
-  --colorTextErrorLight: 2.72,  85%, 68%;
-  --colorTextAlertLight: 24.96, 90%, 53.50%;   
-
-  --colorBgPrimaryLight: 249.75, 67%, 70%;
-  --colorBgInfoLight: 197.44, 95%, 47%; 
-  --colorBgSuccessLight: 164.99, 66%, 40%;
-  --colorBgErrorLight: 2.72,  85%, 68%;
-  --colorBgAlertLight: 24.96, 90%, 53.50%; 
-
-  /* color scheme dark */
-
-  --colorTextPrimaryDark: 249.75, 67%, 70%;
-  --colorTextInfoDark: 197.44, 95%, 47%; 
-  --colorTextSuccessDark: 164.99, 66%, 40%;
-  --colorTextErrorDark: 2.72,  85%, 68%;
-  --colorTextAlertDark: 24.96, 90%, 53.50%;   
-
-  --colorBgPrimaryDark: 249.75, 67%, 70%;
-  --colorBgInfoDark: 197.44, 95%, 47%; 
-  --colorBgSuccessDark: 164.99, 66%, 40%;
-  --colorBgErrorDark: 2.72,  85%, 68%;
-  --colorBgAlertDark: 24.96, 90%, 53.50%; 
+  --colorPrimary: 249.75, 67%, 70%;
+  --colorInfo: 197.44, 95%, 47%; 
+  --colorSuccess: 164.99, 60%, 43%;
+  --colorError: 2.72,  85%, 68%;
+  --colorAlert: 24.96, 90%, 53.50%;   
 
   /*neutral colors*/
   --colorBgLight: 0, 0%, 96%;
@@ -50,33 +30,27 @@
   --colorBgDark: 0, 0%, 8%;
   --colorBgDarker: 0, 0%, 4%;
 
+  --colorShadow: 223, 39%, 14%;
   /* COLOR DEFAULT SCHEME DON'T CHANGE(If you want to customize only change above variables */
   
   --text-color: 0;
   --text-color-headline: 0;
   --bg-color: 0;
-
-  --primary-text-color:var(--colorTextPrimaryLight);
-  --info-text-color:var(--colorTextInfoLight);
-  --success-text-color:var(--colorTextSuccessLight);
-  --error-text-color:var(--colorTextErrorLight);
-  --alert-text-color:var(--colorTextAlertLight);
-
-  --primary-bg-color:var(--colorBgPrimaryLight);
-  --info-bg-color:var(--colorBgInfoLight);
-  --success-bg-color:var(--colorBgSuccessLight);
-  --error-bg-color:var(--colorBgErrorLight);
-  --alert-bg-color:var(--colorBgAlertLight);
-
-  --card-bg-color: 0, 0%, 100%;
-
-  --shadow: 223, 39%, 14%;
-
   --border: 0;
 
-  --border-hover: var(--colorBgPrimaryLight);
-  --input-color: var(--colorBgPrimaryLight);
-  --input-text-color: var(--colorTextPrimaryLight);
+  --primary-color:var(--colorPrimary);
+  --info-color:var(--colorInfo);
+  --success-color:var(--colorSuccess);
+  --error-color:var(--colorError);
+  --alert-color:var(--colorAlert);
+
+  --card-bg-color: var(----colorBgLighter);
+
+  --border-hover: var(--colorPrimary);
+  --input-color: var(--colorPrimary);
+  --input-text-color: var(--colorPrimary);
+
+  --shadow: var(--colorShadow);
 }
 
 /* remove default margin and padding from some elements elements */
@@ -161,7 +135,7 @@ ul {
 *:before {
   box-sizing: inherit;
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--colorTextPrimaryLight)) hsla(var(--colorBgPrimaryLight), .15);
+  scrollbar-color: hsl(var(--colorPrimary)) hsla(var(--colorPrimary), .15);
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -169,10 +143,10 @@ ul {
   width: 8px;
 }
 *::-webkit-scrollbar-track {
-  background: hsla(var(--colorBgPrimaryLight), .15);
+  background: hsla(var(--colorPrimary), .15);
 }
 *::-webkit-scrollbar-thumb {
-  background: hsl(var(--colorTextPrimaryLight));
+  background: hsl(var(--colorPrimary));
 }
 
 html {
@@ -202,22 +176,6 @@ body {
   --border: var(--lighterColor);
   
   --card-bg-color: var(--colorBgLighter);
-
-  --primary-text-color:var(--colorTextPrimaryLight);
-  --info-text-color:var(--colorTextInfoLight);
-  --success-text-color:var(--colorTextSuccessLight);
-  --error-text-color:var(--colorTextErrorLight);
-  --alert-text-color:var(--colorTextAlertLight);
-
-  --primary-bg-color:var(--colorBgPrimaryLight);
-  --info-bg-color:var(--colorBgInfoLight);
-  --success-bg-color:var(--colorBgSuccessLight);
-  --error-bg-color:var(--colorBgErrorLight);
-  --alert-bg-color:var(--colorBgAlertLight);
-
-  --border-hover: var(--colorBgPrimaryLight);
-  --input-color: var(--colorBgPrimaryLight);
-  --input-text-color: var(--colorTextPrimaryLight);
 }
 
 body.theme-dark {
@@ -229,22 +187,6 @@ body.theme-dark {
   --border: var(--darkerColor);
 
   --card-bg-color: var(--colorBgDark);
-
-  --primary-text-color:var(--colorTextPrimaryDark);
-  --info-text-color:var(--colorTextInfoDark);
-  --success-text-color:var(--colorTextSuccessDark);
-  --error-text-color:var(--colorTextErrorDark);
-  --alert-text-color:var(--colorTextAlertDark);
-
-  --primary-bg-color:var(--colorBgPrimaryDark);
-  --info-bg-color:var(--colorBgInfoDark);
-  --success-bg-color:var(--colorBgSuccessDark);
-  --error-bg-color:var(--colorBgErrorDark);
-  --alert-bg-color:var(--colorBgAlertDark);
-
-  --border-hover: var(--colorBgPrimaryDark);
-  --input-color: var(--colorBgPrimaryDark);
-  --input-text-color: var(--colorTextPrimaryDark);
 }
 
 
@@ -253,7 +195,7 @@ blockquote {
   font-style: italic;
   color: hsl(var(--text-color));
   padding: 2.5rem 3rem 2.5rem 6rem;
-  border-left: .5rem solid hsl(var(--primary-bg-color), .5);
+  border-left: .5rem solid hsl(var(--primary-color), .5);
   position: relative;
   background: hsla(0, 0%, 50%, 0.05);
 }
@@ -261,7 +203,7 @@ blockquote {
 blockquote::before {
   font-family: sans-serif;
   content: "\201C";
-  color: hsl(var(--primary-bg-color), .9);
+  color: hsl(var(--primary-color), .9);
   font-size: 4em;
   position: absolute;
   left: 10px;
@@ -514,25 +456,25 @@ hr {
 /* PRIMARY BUTTON */
 
 .button.primary {
-  background: hsla(var(--primary-bg-color), .1);
+  background: hsla(var(--primary-color), .1);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .button.primary:hover {
-  background: hsla(var(--primary-bg-color), .175);
+  background: hsla(var(--primary-color), .175);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .button.primary:active {
-  background: hsla(var(--primary-bg-color), .25);
+  background: hsla(var(--primary-color), .25);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .button.primary:focus-visible:not(:active) {
-  box-shadow: 0 0 0 0.125em hsla(var(--primary-bg-color), 0.4);
+  box-shadow: 0 0 0 0.125em hsla(var(--primary-color), 0.4);
 } 
 
 /* PRIMARY BUTTON OUTLINED */
@@ -540,20 +482,20 @@ hr {
 .button.primary.outline {
   background: transparent;
   border-width: .1rem;
-  border-color: hsla(var(--primary-bg-color), .6);
-  color: hsl(var(--primary-text-color));
+  border-color: hsla(var(--primary-color), .6);
+  color: hsl(var(--primary-color));
 }
 
 .button.primary.outline:hover {
-  background: hsla(var(--primary-bg-color), .175);
+  background: hsla(var(--primary-color), .175);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .button.primary.outline:active {
-  background: hsla(var(--primary-bg-color), .25);
+  background: hsla(var(--primary-color), .25);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 /* PRIMARY BUTTON TEXTONLY */
@@ -561,43 +503,43 @@ hr {
 .button.primary.textonly {
   background: transparent;
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .button.primary.textonly:hover {
-  background: hsla(var(--primary-bg-color), .175);
+  background: hsla(var(--primary-color), .175);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .button.primary.textonly:active {
-  background: hsla(var(--primary-bg-color), .25);
+  background: hsla(var(--primary-color), .25);
   border-color: transparent;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 /* INFO BUTTON */
 
 .button.info {
-  background: hsla(var(--info-bg-color), .1);
+  background: hsla(var(--info-color), .1);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .button.info:hover {
-  background: hsla(var(--info-bg-color), .175);
+  background: hsla(var(--info-color), .175);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .button.info:active {
-  background: hsla(var(--info-bg-color), .25);
+  background: hsla(var(--info-color), .25);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .button.info:focus-visible:not(:active) {
-  box-shadow: 0 0 0 0.125em hsla(var(--info-bg-color), 0.4);
+  box-shadow: 0 0 0 0.125em hsla(var(--info-color), 0.4);
 }
 
 /* INFO BUTTON OUTLINED */
@@ -605,20 +547,20 @@ hr {
 .button.info.outline {
   background: transparent;
   border-width: .1rem;
-  border-color: hsla(var(--info-bg-color), .4);
-  color: hsl(var(--info-text-color));
+  border-color: hsla(var(--info-color), .4);
+  color: hsl(var(--info-color));
 }
 
 .button.info.outline:hover {
-  background: hsla(var(--info-bg-color), .175);
+  background: hsla(var(--info-color), .175);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .button.info.outline:active {
-  background: hsla(var(--info-bg-color), .25);
+  background: hsla(var(--info-color), .25);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 /* INFO BUTTON TEXTONLY */
@@ -626,43 +568,43 @@ hr {
 .button.info.textonly {
   background: transparent;
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .button.info.textonly:hover {
-  background: hsla(var(--info-bg-color), .175);
+  background: hsla(var(--info-color), .175);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .button.info.textonly:active {
-  background: hsla(var(--info-bg-color), .25);
+  background: hsla(var(--info-color), .25);
   border-color: transparent;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 /* SUCCESS BUTTON */
 
 .button.success {
-  background: hsla(var(--success-bg-color), .1);
+  background: hsla(var(--success-color), .1);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .button.success:hover {
-  background: hsla(var(--success-bg-color), .175);
+  background: hsla(var(--success-color), .175);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .button.success:active {
-  background: hsla(var(--success-bg-color), .25);
+  background: hsla(var(--success-color), .25);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .button.success:focus-visible:not(:active) {
-  box-shadow: 0 0 0 0.125em hsla(var(--success-bg-color), 0.4);
+  box-shadow: 0 0 0 0.125em hsla(var(--success-color), 0.4);
 }
 
 /* SUCCESS BUTTON OUTLINED */
@@ -670,20 +612,20 @@ hr {
 .button.success.outline {
   background: transparent;
   border-width: .1rem;
-  border-color: hsla(var(--success-bg-color), .4);
-  color: hsl(var(--success-text-color));
+  border-color: hsla(var(--success-color), .4);
+  color: hsl(var(--success-color));
 }
 
 .button.success.outline:hover {
-  background: hsla(var(--success-bg-color), .175);
+  background: hsla(var(--success-color), .175);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .button.success.outline:active {
-  background: hsla(var(--success-bg-color), .25);
+  background: hsla(var(--success-color), .25);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 /* SUCCESS BUTTON TEXTONLY */
@@ -691,43 +633,43 @@ hr {
 .button.success.textonly {
   background: transparent;
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .button.success.textonly:hover {
-  background: hsla(var(--success-bg-color), .175);
+  background: hsla(var(--success-color), .175);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .button.success.textonly:active {
-  background: hsla(var(--success-bg-color), .25);
+  background: hsla(var(--success-color), .25);
   border-color: transparent;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 /* ERROR BUTTON */
 
 .button.error {
-  background: hsla(var(--error-bg-color), .1);
+  background: hsla(var(--error-color), .1);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .button.error:hover {
-  background: hsla(var(--error-bg-color), .175);
+  background: hsla(var(--error-color), .175);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .button.error:active {
-  background: hsla(var(--error-bg-color), .25);
+  background: hsla(var(--error-color), .25);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .button.error:focus-visible:not(:active) {
-  box-shadow: 0 0 0 0.125em hsla(var(--error-bg-color), 0.4);
+  box-shadow: 0 0 0 0.125em hsla(var(--error-color), 0.4);
 }
 
 /* ERROR BUTTON OUTLINED */
@@ -735,20 +677,20 @@ hr {
 .button.error.outline {
   background: transparent;
   border-width: .1rem;
-  border-color: hsla(var(--error-bg-color), .4);
-  color: hsl(var(--error-text-color));
+  border-color: hsla(var(--error-color), .4);
+  color: hsl(var(--error-color));
 }
 
 .button.error.outline:hover {
-  background: hsla(var(--error-bg-color), .175);
+  background: hsla(var(--error-color), .175);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .button.error.outline:active {
-  background: hsla(var(--error-bg-color), .25);
+  background: hsla(var(--error-color), .25);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 /* ERROR BUTTON TEXTONLY */
@@ -756,43 +698,43 @@ hr {
 .button.error.textonly {
   background: transparent;
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .button.error.textonly:hover {
-  background: hsla(var(--error-bg-color), .175);
+  background: hsla(var(--error-color), .175);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .button.error.textonly:active {
-  background: hsla(var(--error-bg-color), .25);
+  background: hsla(var(--error-color), .25);
   border-color: transparent;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 /* ALERT BUTTON */
 
 .button.alert {
-  background: hsla(var(--alert-bg-color), .1);
+  background: hsla(var(--alert-color), .1);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .button.alert:hover {
-  background: hsla(var(--alert-bg-color), .175);
+  background: hsla(var(--alert-color), .175);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .button.alert:active {
-  background: hsla(var(--alert-bg-color), .25);
+  background: hsla(var(--alert-color), .25);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .button.alert:focus-visible:not(:active) {
-  box-shadow: 0 0 0 0.125em hsla(var(--alert-text-color), 0.4);
+  box-shadow: 0 0 0 0.125em hsla(var(--alert-color), 0.4);
 }
 
 /* ALERT BUTTON OUTLINED */
@@ -800,20 +742,20 @@ hr {
 .button.alert.outline {
   background: transparent;
   border-width: .1rem;
-  border-color: hsla(var(--alert-bg-color), .4);
-  color: hsl(var(--alert-text-color));
+  border-color: hsla(var(--alert-color), .4);
+  color: hsl(var(--alert-color));
 }
 
 .button.alert.outline:hover {
-  background: hsla(var(--alert-bg-color), .175);
+  background: hsla(var(--alert-color), .175);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .button.alert.outline:active {
-  background: hsla(var(--alert-bg-color), .25);
+  background: hsla(var(--alert-color), .25);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 /* ALERT BUTTON TEXTONLY */
@@ -821,19 +763,19 @@ hr {
 .button.alert.textonly {
   background: transparent;
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .button.alert.textonly:hover {
-  background: hsla(var(--alert-bg-color), .175);
+  background: hsla(var(--alert-color), .175);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .button.alert.textonly:active {
-  background: hsla(var(--alert-bg-color), .25);
+  background: hsla(var(--alert-color), .25);
   border-color: transparent;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 /* END BUTTON */
@@ -919,7 +861,7 @@ hr {
   font-size: 1.8rem;
   padding: 0;
   background: hsl(var(--card-bg-color));
-  border: .2rem solid hsla(var(--primary-bg-color), .75);
+  border: .2rem solid hsla(var(--primary-color), .75);
   border-radius: .6em;
   justify-content: flex-start;
   overflow: hidden;
@@ -929,9 +871,9 @@ hr {
 .card.has-layout.primary .card-header {
   display: flex;
   padding: .5rem;
-  background: hsla(var(--primary-bg-color), .2);
-  border-bottom: .2rem solid hsla(var(--primary-bg-color), .75);
-  color: hsl(var(--primary-text-color));
+  background: hsla(var(--primary-color), .2);
+  border-bottom: .2rem solid hsla(var(--primary-color), .75);
+  color: hsl(var(--primary-color));
   font-weight: bold;
   background-clip: padding-box;
 }
@@ -943,20 +885,20 @@ hr {
   padding: 2rem;
   background: transparent;
   border: 0;
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
 }
 
 .card.has-layout.primary.clickable:hover {
-  background: hsla(var(--primary-text-color), .05);
-  border-color: hsla(var(--primary-text-color), .85);
-  color: hsl(var(--primary-text-color));
+  background: hsla(var(--primary-color), .05);
+  border-color: hsla(var(--primary-color), .85);
+  color: hsl(var(--primary-color));
   cursor: pointer;
 }
   
 .card.has-layout.primary.clickable:active {
-  background: hsla(var(--primary-text-color), .125);
-  border-color: hsla(var(--primary-text-color), 1);
-  color: hsl(var(--primary-text-color));
+  background: hsla(var(--primary-color), .125);
+  border-color: hsla(var(--primary-color), 1);
+  color: hsl(var(--primary-color));
 }
 
 /* INFO CARD */
@@ -967,7 +909,7 @@ hr {
   font-size: 1.8rem;
   padding: 0;
   background: hsl(var(--card-bg-color));
-  border: .2rem solid hsla(var(--info-bg-color), .75);
+  border: .2rem solid hsla(var(--info-color), .75);
   border-radius: .6em;
   justify-content: flex-start;
   overflow: hidden;
@@ -977,9 +919,9 @@ hr {
 .card.has-layout.info .card-header {
   display: flex;
   padding: .5rem;
-  background: hsla(var(--info-bg-color), .2);
-  color: hsl(var(--info-text-color));
-  border-bottom: .2rem solid hsla(var(--info-bg-color), .75);
+  background: hsla(var(--info-color), .2);
+  color: hsl(var(--info-color));
+  border-bottom: .2rem solid hsla(var(--info-color), .75);
   font-weight: bold;
   background-clip: padding-box;
 }
@@ -991,20 +933,20 @@ hr {
   padding: 2rem;
   background: transparent;
   border: 0;
-  color: hsl(var(--info-text-color));
+  color: hsl(var(--info-color));
 }
 
 .card.has-layout.info.clickable:hover {
-  background: hsla(var(--info-text-color), .05);
-  border-color: hsla(var(--info-text-color), .85);
-  color: hsl(var(--info-text-color));
+  background: hsla(var(--info-color), .05);
+  border-color: hsla(var(--info-color), .85);
+  color: hsl(var(--info-color));
   cursor: pointer;
 }
   
 .card.has-layout.info.clickable:active {
-  background: hsla(var(--info-text-color), .125);
-  border-color: hsla(var(--info-text-color), 1);
-  color: hsl(var(--info-text-color));
+  background: hsla(var(--info-color), .125);
+  border-color: hsla(var(--info-color), 1);
+  color: hsl(var(--info-color));
 }
 
 /* SUCCESS CARD */
@@ -1015,7 +957,7 @@ hr {
   font-size: 1.8rem;
   padding: 0;
   background: hsl(var(--card-bg-color));
-  border: .2rem solid hsla(var(--success-bg-color), .75);
+  border: .2rem solid hsla(var(--success-color), .75);
   border-radius: .6em;
   justify-content: flex-start;
   overflow: hidden;
@@ -1025,9 +967,9 @@ hr {
 .card.has-layout.success .card-header {
   display: flex;
   padding: .5rem;
-  background: hsla(var(--success-bg-color), .2);
-  border-bottom: .2rem solid hsla(var(--success-bg-color), .75);
-  color: hsl(var(--success-text-color));
+  background: hsla(var(--success-color), .2);
+  border-bottom: .2rem solid hsla(var(--success-color), .75);
+  color: hsl(var(--success-color));
   font-weight: bold;
   background-clip: padding-box;
 }
@@ -1039,20 +981,20 @@ hr {
   padding: 2rem;
   background: transparent;
   border: 0;
-  color: hsl(var(--success-text-color));
+  color: hsl(var(--success-color));
 }
 
 .card.has-layout.success.clickable:hover {
-  background: hsla(var(--success-text-color), .05);
-  border-color: hsla(var(--success-text-color), .85);
-  color: hsl(var(--success-text-color));
+  background: hsla(var(--success-color), .05);
+  border-color: hsla(var(--success-color), .85);
+  color: hsl(var(--success-color));
   cursor: pointer;
 }
   
 .card.has-layout.success.clickable:active {
-  background: hsla(var(--success-text-color), .125);
-  border-color: hsla(var(--success-text-color), 1);
-  color: hsl(var(--success-text-color));
+  background: hsla(var(--success-color), .125);
+  border-color: hsla(var(--success-color), 1);
+  color: hsl(var(--success-color));
 }
 
 /* ERROR CARD */
@@ -1063,7 +1005,7 @@ hr {
   font-size: 1.8rem;
   padding: 0;
   background: hsl(var(--card-bg-color));
-  border: .2rem solid hsla(var(--error-bg-color), .75);
+  border: .2rem solid hsla(var(--error-color), .75);
   border-radius: .6em;
   justify-content: flex-start;
   overflow: hidden;
@@ -1073,9 +1015,9 @@ hr {
 .card.has-layout.error .card-header {
   display: flex;
   padding: .5rem;
-  background: hsla(var(--error-bg-color), .2);
-  border-bottom: .2rem solid hsla(var(--error-bg-color), .75);
-  color: hsl(var(--error-text-color));
+  background: hsla(var(--error-color), .2);
+  border-bottom: .2rem solid hsla(var(--error-color), .75);
+  color: hsl(var(--error-color));
   font-weight: bold;
   background-clip: padding-box;
 }
@@ -1087,20 +1029,20 @@ hr {
   padding: 2rem;
   background: transparent;
   border: 0;
-  color: hsl(var(--error-text-color));
+  color: hsl(var(--error-color));
 }
 
 .card.has-layout.error.clickable:hover {
-  background: hsla(var(--error-text-color), .05);
-  border-color: hsla(var(--error-text-color), .85);
-  color: hsl(var(--error-text-color));
+  background: hsla(var(--error-color), .05);
+  border-color: hsla(var(--error-color), .85);
+  color: hsl(var(--error-color));
   cursor: pointer;
 }
   
 .card.has-layout.error.clickable:active {
-  background: hsla(var(--error-text-color), .125);
-  border-color: hsla(var(--error-text-color), 1);
-  color: hsl(var(--error-text-color));
+  background: hsla(var(--error-color), .125);
+  border-color: hsla(var(--error-color), 1);
+  color: hsl(var(--error-color));
 }
 
 /* ALERT CARD */
@@ -1111,7 +1053,7 @@ hr {
   font-size: 1.8rem;
   padding: 0;
   background: hsl(var(--card-bg-color));
-  border: .2rem solid hsla(var(--alert-bg-color), .75);
+  border: .2rem solid hsla(var(--alert-color), .75);
   border-radius: .6em;
   justify-content: flex-start;
   overflow: hidden;
@@ -1121,9 +1063,9 @@ hr {
 .card.has-layout.alert .card-header {
   display: flex;
   padding: .5rem;
-  background: hsla(var(--alert-bg-color), .2);
-  border-bottom: .2rem solid hsla(var(--alert-bg-color), .75);
-  color: hsl(var(--alert-text-color));
+  background: hsla(var(--alert-color), .2);
+  border-bottom: .2rem solid hsla(var(--alert-color), .75);
+  color: hsl(var(--alert-color));
   font-weight: bold;
   background-clip: padding-box;
 }
@@ -1135,20 +1077,20 @@ hr {
   padding: 2rem;
   background: transparent;
   border: 0;
-  color: hsl(var(--alert-text-color));
+  color: hsl(var(--alert-color));
 }
 
 .card.has-layout.alert.clickable:hover {
-  background: hsla(var(--alert-text-color), .05);
-  border-color: hsla(var(--alert-text-color), .85);
-  color: hsl(var(--alert-text-color));
+  background: hsla(var(--alert-color), .05);
+  border-color: hsla(var(--alert-color), .85);
+  color: hsl(var(--alert-color));
   cursor: pointer;
 }
   
 .card.has-layout.alert.clickable:active {
-  background: hsla(var(--alert-text-color), .125);
-  border-color: hsla(var(--alert-text-color), 1);
-  color: hsl(var(--alert-text-color));
+  background: hsla(var(--alert-color), .125);
+  border-color: hsla(var(--alert-color), 1);
+  color: hsl(var(--alert-color));
 }
 
 /* BEGIN RADIO, CHECKBOX, SWITCH */
@@ -1438,7 +1380,7 @@ input:-webkit-autofill:active {
 }
 
 .list li {
-  --color: hsl(var(--primary-text-color));
+  --color: hsl(var(--primary-color));
   border: 1px solid transparent;
   border-radius: 6px;
 }
@@ -1505,17 +1447,17 @@ input:-webkit-autofill:active {
 }
 
 .list li a:hover {
-  background: hsla(var(--primary-bg-color), .075);
+  background: hsla(var(--primary-color), .075);
   transform: translateX(2px);
   transition: transform 0.3s ease;
 }
 
 .list li a:active {
-  background: hsla(var(--primary-bg-color), .15);
+  background: hsla(var(--primary-color), .15);
 }
 
 .list li a:hover > .text, .list li a:active > .text, .list li a:hover > .text > small, .list li a:active > .text > small {
-  color: hsl(var(--primary-text-color));
+  color: hsl(var(--primary-color));
   transition: color .3s ease;
 }
 
@@ -1632,15 +1574,15 @@ input:-webkit-autofill:active {
 }
 
 .moreinfo:hover {
-  background: hsla(var(--primary-bg-color), .15);
-  color: hsla(var(--primary-text-color), 1);
+  background: hsla(var(--primary-color), .15);
+  color: hsla(var(--primary-color), 1);
   max-height: 500px;
   -webkit-transition: max-height 0.5s;
   transition: max-height 0.5s;
   border: 2px solid #FFFFFF;
   z-index: 1000;
   overflow-y: auto;
-  box-shadow: 0px 0px 0px 2px hsla(var(--primary-text-color), 1);
+  box-shadow: 0px 0px 0px 2px hsla(var(--primary-color), 1);
   -webkit-transition-timing-function: cubic-bezier(0.7,2, 0.05,0.5);
   transition-timing-function: cubic-bezier(0.7,2, 0.05, 0.5);
   overscroll-behavior: none;
@@ -1651,7 +1593,7 @@ input:-webkit-autofill:active {
 }
 
 .moreinfo {
-  color: hsla(var(--primary-text-color), 1);
+  color: hsla(var(--primary-color), 1);
   padding: 10px 12px 5px 12px;
   background: hsl(var(--card-bg-color));
   width: 100%;
@@ -2769,6 +2711,8 @@ input:-webkit-autofill:active {
   position: relative;
   z-index: 30;
   width: 100%;
+  max-width: 112rem;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
