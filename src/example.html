@@ -4,8 +4,39 @@
     <link rel="stylesheet" href="Asteroid.css">
   </head>
   <body>
+    <nav class="navbar full-min">
+      <div class="navbar-title">
+        <a class="button primary textonly fs-5 mass-2 fw-light">Example Brand</a>
+      </div>
+      <div class="navbar-menu justify-content-center">
+        <a href="#" class="button textonly fw-regular">Menu 1</a>
+        <a href="#" class="button textonly fw-regular">Shopping List</a>
+        <div class="dropdown left hoverable">
+          <a href="#" class="dropdown-trigger button textonly fw-regular" aria-haspopup="true">
+            Dropdown 2
+          </a>
+          <div class="dropdown-menu" id="dropdown-menu1" role="menu">
+            <a href="#" class="button textonly fw-regular">Item 1</a>
+            <a href="#" class="button textonly fw-regular">Item 2</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="button textonly fw-regular">Item 3</a>
+          </div>
+        </div>
+        <div class="dropdown right hoverable voidl-auto">
+          <a href="#" class="dropdown-trigger button textonly fw-regular" aria-haspopup="true">
+            Dropdown 2
+          </a>
+          <div class="dropdown-menu" id="dropdown-menu1" role="menu">
+            <a href="#" class="button textonly fw-regular">Item 1</a>
+            <a href="#" class="button textonly fw-regular">Item 2</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="button textonly fw-regular">Item 3</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="void-5">
-      <div class="row wrap justify-content-center align-items-start">
+      <div class="row wrap justify-content-center">
         <div class="col align-items-center">
           <h3>Buttons</h3>
           <div class="card">
@@ -143,13 +174,164 @@
                 class="void-1 button error textonly fs-4">Reset</button></div>
           </div>
         </div>
-        <div class="card">
-          <blockquote>
-            <p><em>Asteroid CSS is Amazing.</em></p>
-          </blockquote>
+        <div class="col align-items-center">
+          <div class="card">
+            <blockquote>
+              <p><em>Asteroid CSS is Amazing.</em></p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col align-items-center grow">
+          <div class="row voidb-2">
+            <div class="col">
+              <div class="card has-layout grow clickable">
+                <div class="card-header justify-content-center"><p>Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout primary grow clickable">
+                <div class="card-header justify-content-center"><p>Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout info grow clickable">
+                <div class="card-header justify-content-center"><p>Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout success grow clickable">
+                <div class="card-header justify-content-center"><p>Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout error grow clickable">
+                <div class="card-header justify-content-center"><p>Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout alert grow clickable">
+                <div class="card-header justify-content-center"><p>Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card has-layout grow">
+                <div class="card-header justify-content-center"><p>Not Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout primary grow">
+                <div class="card-header justify-content-center"><p>Not Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout info grow">
+                <div class="card-header justify-content-center"><p>Not Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout success grow">
+                <div class="card-header justify-content-center"><p>Not Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout error grow">
+                <div class="card-header justify-content-center"><p>Not Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card has-layout alert grow">
+                <div class="card-header justify-content-center"><p>Not Clickable</p></div>
+                <div class="card-content grow">
+                  <div class="row">
+                    <div class="col grow justify-content-center align-items-center word-break">
+                      Card Description
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    
     </div>
   </body>
 </html>
