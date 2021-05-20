@@ -139,7 +139,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Main, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -2764,27 +2764,21 @@ input:-webkit-autofill:active {
 /* Begin nav */
 
 .navbar {
-  padding: 1.5rem;
+  align-items: center;
+  padding: 1rem;
   position: relative;
   z-index: 30;
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar-menu {
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
   align-items: stretch;
-  display: -webkit-box; 
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; 
   display: flex;
-  min-height: 3.25rem;
-  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
 }
 
 .navbar.bottom,
